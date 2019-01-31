@@ -4,6 +4,7 @@ import styled from 'styled-components'
 
 import SEO from '../components/seo'
 import GlobalStyle from '../styles/global'
+import '../styles/normalize.css'
 
 const MainLayout = styled.div`
   height: 100vh;
