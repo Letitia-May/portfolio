@@ -14,7 +14,7 @@ const MainLayout = styled.div`
   justify-content: center;
   margin: 0 auto;
   padding: 1rem 1.5rem;
-  background-color: #FCFCFC;
+  background-color: var(--white);
 `
 
 const MainContent = styled.div`
@@ -36,8 +36,8 @@ const LittleTitle = styled.h2`
 const Line = styled.hr`
   max-width: 800px;
   width: 100%;
-  border-top: 1px solid #FF78BA;
-  background: #FF78BA;
+  border-top: 1px solid var(--pink);
+  background: var(--pink);
 
   &:after {
     content: ' ';
@@ -46,7 +46,7 @@ const Line = styled.hr`
     bottom: 4px;
     left: calc(50% - 4px);
     width: 8px;
-    background: #FF78BA;
+    background: var(--pink);
     transform: rotate(45deg);
     display: block;
   }

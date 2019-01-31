@@ -1,14 +1,21 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-html {
+  :root {
+    --dark-grey: #555555;
+    --light-grey: #bdbdbd;
+    --white: #fcfcfc;
+    --pink: #ff78ba;
+    --teal: #00c7b6;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  html {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     box-sizing: border-box;
+    font: 112.5%/1.45em sans-serif;
     /* -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
     /* -webkit-font-smoothing: antialiased;
@@ -23,8 +30,8 @@ html {
   body {
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     font-family: 'Montserrat', sans-serif;
-    color: #555;
-    h1, h2, h3, h4 {
+    color: var(--dark-grey);
+    h1, h2, h3, h4, h5, h6 {
       @import url('https://fonts.googleapis.com/css?family=Raleway');
       font-family: 'Raleway', sans-serif;
       font-weight: 300;
@@ -32,7 +39,7 @@ html {
     }
   }
   a {
-    color: #00C7B6;
+    color: var(--teal);
     text-decoration: none;
   }
 `

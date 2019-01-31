@@ -3,11 +3,9 @@ import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import GlobalStyle from '../styles/global'
 
 const SecondPage = () => (
   <>
-    <GlobalStyle />
     <Layout>
       <SEO title="Page two" />
       <h1>Hi from the second page</h1>
