@@ -3,6 +3,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import SEO from '../components/seo'
+import GlobalStyle from '../styles/global'
 
 const MainLayout = styled.div`
   height: 100vh;
@@ -13,7 +14,7 @@ const MainLayout = styled.div`
   justify-content: center;
   margin: 0 auto;
   padding: 1rem 1.5rem;
-  background-color: #f7f8f8;
+  background-color: #FCFCFC;
 `
 
 const MainContent = styled.div`
@@ -21,23 +22,22 @@ const MainContent = styled.div`
 `
 
 const BigTitle = styled.h1`
-  color: #333a44;
+  font-size: 3rem;
+  text-indent: 0.5rem;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
 `
 
 const LittleTitle = styled.h2`
-  color: #333a44;
+  font-size: 1.5rem;
+  text-indent: 0.5rem;
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
 `
 
 const Line = styled.hr`
   max-width: 800px;
   width: 100%;
-  border-top: 1px solid #8de3db;
+  border-top: 1px solid #FF78BA;
+  background: #FF78BA;
 
   &:after {
     content: ' ';
@@ -46,22 +46,25 @@ const Line = styled.hr`
     bottom: 4px;
     left: calc(50% - 4px);
     width: 8px;
-    background: #8de3db;
+    background: #FF78BA;
     transform: rotate(45deg);
     display: block;
   }
 `
 
 const IndexPage = () => (
-  <MainLayout>
-    <SEO title="Home" keywords={[`Chloe Kuypers`, `development`]} />
-    <MainContent>
-      <BigTitle>Chloe Kuypers</BigTitle>
-      <Line />
-      <LittleTitle>Web developer</LittleTitle>
-    </MainContent>
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
-  </MainLayout>
+  <>
+    <GlobalStyle />
+    <MainLayout>
+      <SEO title="Home" keywords={[`Chloe Kuypers`, `development`]} />
+      <MainContent>
+        <BigTitle>Chloe Kuypers</BigTitle>
+        <Line />
+        <LittleTitle>Web developer</LittleTitle>
+      </MainContent>
+      {/* <Link to="/page-2/">Go to page 2</Link> */}
+    </MainLayout>
+  </>
 )
 
 export default IndexPage
