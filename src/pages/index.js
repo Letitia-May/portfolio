@@ -1,8 +1,10 @@
 import React from 'react'
-// import { Link } from 'gatsby'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
+// import { Link } from 'gatsby'
 
 import SEO from '../components/seo'
+import Icon from '../components/icon'
 import GlobalStyle from '../styles/global'
 import '../styles/normalize.css'
 
@@ -53,8 +55,12 @@ const Line = styled.hr`
   }
 `
 
+
 const IndexPage = () => (
   <>
+    <Helmet>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"></link>
+    </Helmet>
     <GlobalStyle />
     <MainLayout>
       <SEO title="Home" keywords={[`Chloe Kuypers`, `development`]} />
@@ -62,6 +68,9 @@ const IndexPage = () => (
         <BigTitle>Chloe Kuypers</BigTitle>
         <Line />
         <LittleTitle>Web developer</LittleTitle>
+        <Icon type="github" url="https://github.com/Letitia-May"/>
+        <Icon type="linkedin-in" url="https://au.linkedin.com/in/ckuypers"/>
+        <Icon type="twitter" url="https://twitter.com/letitia_may"/>
       </MainContent>
       {/* <Link to="/page-2/">Go to page 2</Link> */}
     </MainLayout>
