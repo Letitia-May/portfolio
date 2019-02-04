@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     box-sizing: border-box;
-    font: 112.5%/1.45em sans-serif;
+    font: 1.25em sans-serif;
     /* -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
     /* -webkit-font-smoothing: antialiased;
@@ -29,14 +29,15 @@ const GlobalStyle = createGlobalStyle`
   }
   body {
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    @import url('https://fonts.googleapis.com/css?family=Raleway');
     font-family: 'Montserrat', sans-serif;
     color: var(--dark-grey);
-    h1, h2, h3, h4, h5, h6 {
-      @import url('https://fonts.googleapis.com/css?family=Raleway');
-      font-family: 'Raleway', sans-serif;
-      font-weight: 300;
-      letter-spacing: 0.5rem;
-    }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+    letter-spacing: 0.35rem;
+    color: var(--white);
+    font-family: 'Raleway', sans-serif;
   }
   a {
     color: var(--teal);

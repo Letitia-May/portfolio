@@ -4,19 +4,14 @@ import styled from 'styled-components'
 
 const Container = styled.a`
 	flex: 1;
-	padding: 1rem 0.75rem 0;
+	padding: 1rem 1rem 0;
 	color: var(--teal);
 	font-size: 2rem;
+	transition: all .35s ease-in-out;
 
-	&:active {
-		color: var(--light-grey);
+	&:hover, &:active {
+		color: var(--pink);
 	}
-
-	/* &:hover {
-		padding-top: 0;
-		position: relative;
-		-webkit-transition: padding-top 0.2s ease;
-	} */
 `
 
 const Icon = ({ url, type}) => (

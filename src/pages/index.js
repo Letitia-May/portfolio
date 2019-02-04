@@ -17,7 +17,7 @@ const MainLayout = styled.div`
   justify-content: center;
   margin: 0 auto;
   padding: 1rem 1.5rem;
-  background-color: var(--white);
+  background-color: var(--dark-grey);
 `
 
 const MainContent = styled.div`
@@ -28,18 +28,28 @@ const BigTitle = styled.h1`
   font-size: 3rem;
   text-indent: 0.5rem;
   text-transform: uppercase;
+  margin-bottom: 1rem;
+
+  @media (max-width: 700px) {
+    font-size: 2.5rem;
+  }
 `
 
 const LittleTitle = styled.h2`
   font-size: 1.5rem;
   text-indent: 0.5rem;
   text-transform: uppercase;
+  margin: 1.5rem 0;
+
+  @media (max-width: 700px) {
+    font-size: 1rem;
+  }
 `
 
 const Line = styled.hr`
-  max-width: 800px;
   width: 100%;
-  border-top: 1px solid var(--pink);
+  max-width: 800px;
+  border: 0.5px solid var(--pink);
   background: var(--pink);
 
   &:after {
