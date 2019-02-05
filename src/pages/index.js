@@ -25,7 +25,7 @@ const MainContent = styled.div`
 
 const ArrowContainer = styled.div`
   padding-top: 2rem;
-`;
+`
 
 const BigTitle = styled.h1`
   font-size: 3rem;
@@ -82,7 +82,7 @@ const Arrow = styled.div`
     border-bottom-width: 4px;
     border-right-width: 4px;
   }
-`;
+`
 
 const IndexPage = () => (
   <>
@@ -106,7 +106,7 @@ const IndexPage = () => (
         <Icon type="twitter" url="https://twitter.com/letitia_may" />
       </MainContent>
       <ArrowContainer>
-        <Link to="/page-2/">
+        <Link to="/projects/">
           <Arrow />
         </Link>
       </ArrowContainer>
