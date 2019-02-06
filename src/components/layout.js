@@ -11,7 +11,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-`;
+`
 
 const PageContent = styled.div`
   margin: 0 auto;
@@ -48,16 +48,16 @@ const Layout = ({ children }) => (
           <Header siteTitle={data.site.siteMetadata.title} />
           <PageContent>{children}</PageContent>
           <Footer>
-          © {new Date().getFullYear()}, Built with{` `}
-          <a href="https://www.gatsbyjs.org" target="_blank">
-            Gatsby
-          </a>
-          <br />
-          Source available on{` `}
-          <a href="https://github.com/Letitia-May/portfolio" target="_blank">
-            Github
-          </a>
-        </Footer>
+            © {new Date().getFullYear()}, Built with{` `}
+            <a href="https://www.gatsbyjs.org" target="_blank">
+              Gatsby
+            </a>
+            <br />
+            Source available on{` `}
+            <a href="https://github.com/Letitia-May/portfolio" target="_blank">
+              Github
+            </a>
+          </Footer>
         </Container>
       </>
     )}

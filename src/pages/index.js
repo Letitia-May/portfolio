@@ -5,6 +5,7 @@ import { Link } from 'gatsby'
 
 import SEO from '../components/seo'
 import Icon from '../components/icon'
+import Button from '../components/button'
 import GlobalStyle from '../styles/global'
 import '../styles/normalize.css'
 
@@ -21,10 +22,7 @@ const MainLayout = styled.div`
 
 const MainContent = styled.div`
   text-align: center;
-`
-
-const ArrowContainer = styled.div`
-  padding-top: 2rem;
+  padding-bottom: 2rem;
 `
 
 const BigTitle = styled.h1`
@@ -42,7 +40,7 @@ const LittleTitle = styled.h2`
   font-size: 1.5rem;
   text-indent: 0.5rem;
   text-transform: uppercase;
-  margin: 1.5rem 0;
+  margin: 1.5rem 0 2rem;
 
   @media (max-width: 700px) {
     font-size: 1rem;
@@ -68,22 +66,6 @@ const Line = styled.hr`
   }
 `
 
-const Arrow = styled.div`
-  box-sizing: border-box;
-  height: 1rem;
-  width: 1rem;
-  border-style: solid;
-  border-color: var(--pink);
-  border-width: 0px 1px 1px 0px;
-  transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
-
-  &:hover {
-    border-bottom-width: 4px;
-    border-right-width: 4px;
-  }
-`
-
 const IndexPage = () => (
   <>
     <Helmet>
@@ -105,11 +87,9 @@ const IndexPage = () => (
         <Icon type="linkedin-in" url="https://au.linkedin.com/in/ckuypers" />
         <Icon type="twitter" url="https://twitter.com/letitia_may" />
       </MainContent>
-      <ArrowContainer>
-        <Link to="/projects/">
-          <Arrow />
-        </Link>
-      </ArrowContainer>
+      <Link to="/projects/">
+        <Button text="Projects" />
+      </Link>
     </MainLayout>
   </>
 )
