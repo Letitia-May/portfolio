@@ -3,7 +3,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Container = styled.a`
-  flex: 1;
   padding: 1rem 1rem 0;
   color: var(--teal);
   font-size: 2rem;

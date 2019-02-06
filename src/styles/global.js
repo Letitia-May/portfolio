@@ -28,16 +28,15 @@ const GlobalStyle = createGlobalStyle`
 		padding: 0;
   }
   body {
-    @import url('https://fonts.googleapis.com/css?family=Montserrat');
     @import url('https://fonts.googleapis.com/css?family=Raleway');
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: var(--dark-grey);
+    letter-spacing: 0.05rem;
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     letter-spacing: 0.35rem;
     color: var(--white);
-    font-family: 'Raleway', sans-serif;
   }
   a {
     color: var(--teal);

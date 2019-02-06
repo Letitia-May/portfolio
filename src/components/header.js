@@ -4,24 +4,36 @@ import React from 'react'
 import styled from 'styled-components'
 
 const OuterContainer = styled.div`
-  background: var(--pink);
   margin-bottom: 1.45rem;
+  padding: 1.5rem;
+
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 `
 
 const InnerContainer = styled.div`
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  border: 1px solid var(--pink);
+  display: inline-block;
+  padding: 1rem;
+  transition: all 0.35s ease-in-out;
+  text-align: center;
+
+  &:hover {
+    border: 1px solid var(--teal);
+  }
 `
 
 const MainTitle = styled.h1`
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 0.75rem;
+  color: var(--dark-grey);
 `
 
 const SubTitle = styled.h2`
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 0.72rem;
+  color: var(--light-grey);
 `
 
 const Header = ({ siteTitle }) => (
