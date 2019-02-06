@@ -7,11 +7,18 @@ import Header from './header'
 import GlobalStyle from '../styles/global'
 import '../styles/normalize.css'
 
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
 const PageContent = styled.div`
   margin: 0 auto;
   max-width: 960px;
   padding: 0px 1.0875rem 1.45rem;
   padding-top: 0;
+  flex: 1;
 `
 
 const Footer = styled.footer`
@@ -36,10 +43,11 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <GlobalStyle />
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <PageContent>{children}</PageContent>
-        <Footer>
+        <Container>
+          <GlobalStyle />
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <PageContent>{children}</PageContent>
+          <Footer>
           © {new Date().getFullYear()}, Built with{` `}
           <a href="https://www.gatsbyjs.org" target="_blank">
             Gatsby
@@ -50,6 +58,7 @@ const Layout = ({ children }) => (
             Github
           </a>
         </Footer>
+        </Container>
       </>
     )}
   />
