@@ -4,7 +4,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 const OuterContainer = styled.div`
-  margin-bottom: 1.45rem;
   padding: 1.5rem;
 
   @media (max-width: 700px) {
