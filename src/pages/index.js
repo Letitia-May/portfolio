@@ -3,11 +3,10 @@ import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
+import '../styles/normalize.css'
+import GlobalStyle from '../styles/global'
 import SEO from '../components/seo'
 import Icon from '../components/icon'
-import Button from '../components/button'
-import GlobalStyle from '../styles/global'
-import '../styles/normalize.css'
 
 const MainLayout = styled.div`
   height: 100vh;
@@ -66,6 +65,17 @@ const Line = styled.hr`
   }
 `
 
+const Button = styled.button`
+  border: 1px solid var(--pink);
+  background-color: var(--dark-grey);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--teal);
+    border: 1px solid var(--white);
+  }
+`
+
 const IndexPage = () => (
   <>
     <Helmet>
@@ -88,7 +98,7 @@ const IndexPage = () => (
         <Icon type="twitter" url="https://twitter.com/letitia_may" />
       </MainContent>
       <Link to="/projects/">
-        <Button text="Projects" />
+        <Button>Projects</Button>
       </Link>
     </MainLayout>
   </>

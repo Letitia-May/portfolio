@@ -42,6 +42,21 @@ const GlobalStyle = createGlobalStyle`
     color: var(--teal);
     text-decoration: none;
   }
+  button {
+    font-size: 0.75rem;
+    letter-spacing: 0.25rem;
+    padding: 0.75rem 0.55rem 0.65rem 0.75rem;
+    text-transform: uppercase;
+    transition: all 0.35s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
 `
 
 export default GlobalStyle

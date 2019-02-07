@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import Header from './header'
-import GlobalStyle from '../styles/global'
 import '../styles/normalize.css'
+import GlobalStyle from '../styles/global'
+import Header from './header'
 
 const Container = styled.div`
   display: flex;
