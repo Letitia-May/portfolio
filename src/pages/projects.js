@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Button from '../components/button'
+// import Button from '../components/button'
 
 const Project = styled.div`
   width: 700px;
@@ -31,10 +31,14 @@ const Projects = () => (
     <Layout>
       <SEO title="Projects" />
 
-      <a href="https://capricornrecords.com.au/" target="_blank">
+      <a
+        href="https://capricornrecords.com.au/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <Project>Capricorn Records</Project>
       </a>
-      <a href="https://techwhen.com/" target="_blank">
+      <a href="https://techwhen.com/" target="_blank" rel="noopener noreferrer">
         <Project>TechWhen</Project>
       </a>
     </Layout>
