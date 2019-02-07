@@ -7,21 +7,37 @@ import SEO from '../components/seo'
 const Project = styled.div`
   width: 700px;
   background-color: var(--teal);
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
   margin: 2rem 0;
   color: var(--white);
-  font-size: 2rem;
-  font-weight: 800;
-  transition: all 0.35s ease-in-out;
-
-  &:hover {
-    background-color: var(--light-grey);
-    cursor: pointer;
-  }
 
   @media (max-width: 800px) {
-    width: 100%;
+    width: 80vw;
+  }
+`
+
+const Title = styled.p`
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
+`
+
+// const AboutLink = styled.a`
+//   color: var(--white);
+//   text-decoration: underline;
+// `;
+
+const Button = styled.button`
+  border: 1px solid var(--white);
+  background-color: var(--teal);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--pink);
   }
 `
 
@@ -29,17 +45,29 @@ const Projects = () => (
   <>
     <Layout>
       <SEO title="Projects" />
+      <Project>
+        {/* <AboutLink>more info</AboutLink> */}
+        <Title>Capricorn Records</Title>
+        <a
+          href="https://capricornrecords.com.au/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>Visit</Button>
+        </a>
+      </Project>
 
-      <a
-        href="https://capricornrecords.com.au/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Project>Capricorn Records</Project>
-      </a>
-      <a href="https://techwhen.com/" target="_blank" rel="noopener noreferrer">
-        <Project>TechWhen</Project>
-      </a>
+      <Project>
+        {/* <AboutLink>more info</AboutLink> */}
+        <Title>TechWhen</Title>
+        <a
+          href="https://techwhen.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button>Visit</Button>
+        </a>
+      </Project>
     </Layout>
   </>
 )

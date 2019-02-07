@@ -43,8 +43,8 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
   button {
-    font-size: 0.75rem;
-    letter-spacing: 0.25rem;
+    font-size: 0.5rem;
+    letter-spacing: 0.2rem;
     padding: 0.75rem 0.55rem 0.65rem 0.75rem;
     text-transform: uppercase;
     transition: all 0.35s ease-in-out;
