@@ -16,10 +16,6 @@ const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     box-sizing: border-box;
     font: 1.25em sans-serif;
-    /* -ms-overflow-style: scrollbar;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); */
-    /* -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
   }
   html, body {
     width: 100%;
