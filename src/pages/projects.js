@@ -12,12 +12,12 @@ const Projects = () => (
       <Project
         url="https://capricornrecords.com.au/"
         title="Capricorn Records"
-        about="Built using Shopify CMS with custom media queries... add some more here"
+        about="An independent e-commerce store selling used vinyls, built using Shopify's CMS."
       />
       <Project
         url="https://techwhen.com/"
         title="TechWhen"
-        about="Work in progress - working on this project with another dev to practive React skills, and learn more about Docker, AWS, Material Design"
+        about="A learning project that uses React, Docker, AWS, Material Design. When complete, it will list upcoming tech conferences."
       />
     </Layout>
   </>
