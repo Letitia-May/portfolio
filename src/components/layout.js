@@ -5,7 +5,7 @@ import styled from 'styled-components'
 
 import '../styles/normalize.css'
 import GlobalStyle from '../styles/global'
-import Header from './header'
+import Header from './header/header'
 
 const Container = styled.div`
   display: flex;
