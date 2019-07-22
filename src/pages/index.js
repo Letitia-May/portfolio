@@ -5,8 +5,8 @@ import { Link } from 'gatsby'
 
 import '../styles/normalize.css'
 import GlobalStyle from '../styles/global'
-import SEO from '../components/seo'
-import Icon from '../components/icon'
+import SEO from '../components/seo/seo'
+import Icon from '../components/icon/icon'
 
 const MainLayout = styled.div`
   height: 100vh;
