@@ -13,8 +13,8 @@ const Header = ({ siteTitle }) => (
           textDecoration: `none`,
         }}
       >
-        <h1 className={styles.main_title}>{siteTitle}</h1>
-        <h2 className={styles.subtitle}>Web developer</h2>
+        <p className={styles.main_title}>{siteTitle}</p>
+        <p className={styles.subtitle}>Web developer</p>
       </Link>
     </div>
   </div>
