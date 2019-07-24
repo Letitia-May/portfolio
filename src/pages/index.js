@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
 
 import '../styles/normalize.css'
-import GlobalStyle from '../styles/global'
+import '../styles/main.scss'
 import styles from './index.module.scss'
 import SEO from '../components/seo/seo'
 import Icon from '../components/icon/icon'
@@ -18,7 +18,6 @@ const IndexPage = () => (
         crossorigin="anonymous"
       />
     </Helmet>
-    <GlobalStyle />
     <div className={styles.main_layout}>
       <SEO title="Home" keywords={[`Chloe Kuypers`, `developer`]} />
       <div className={styles.main_content}>

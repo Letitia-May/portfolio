@@ -2,9 +2,6 @@
   My portfolio 👩‍💻
 </h1>
 
-Personal portfolio - rebuilt using Gatsby, styled components and other fun tools.
-
-
 ## Usage
 
 ### Deploying the app

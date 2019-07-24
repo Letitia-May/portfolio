@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styles from './layout.module.scss'
 
 import '../../styles/normalize.css'
-import GlobalStyle from '../../styles/global'
+import '../../styles/main.scss'
 import Header from '../header/header'
 
 const Layout = ({ children }) => (
@@ -20,7 +20,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div className={styles.container}>
-        <GlobalStyle />
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className={styles.page_content}>{children}</div>
         <div className={styles.footer}>
