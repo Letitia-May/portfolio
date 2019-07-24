@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Layout from '../components/layout'
+import Layout from '../components/layout/layout'
 import SEO from '../components/seo/seo'
-import Project from '../components/project'
+import Project from '../components/projectTile/projectTile'
 
 const Projects = () => (
   <>

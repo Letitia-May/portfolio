@@ -1,0 +1,67 @@
+.container {
+  width: 700px;
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--white);
+
+  @media (max-width: 800px) {
+    width: 80vw;
+  }
+}
+
+.styled_main_tile {
+  padding: 2rem 1rem;
+  background-color: var(--teal);
+}
+
+.styled_info_tile {
+  padding: 2rem 1rem;
+  background-color: var(--light-grey);
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+
+  @media (max-width: 800px) {
+    font-size: 1.5rem;
+  }
+}
+
+.info_link {
+  color: var(--white);
+  font-size: 0.75rem;
+  border-bottom: 1px solid var(--white);
+  transition: all 0.35s ease-in-out;
+
+  &:hover {
+    color: var(--dark-grey);
+    cursor: pointer;
+    font-weight: 600;
+    border-bottom: 1px solid var(--dark-grey);
+  }
+}
+
+.button {
+  border: 1px solid var(--white);
+  background-color: var(--teal);
+  color: var(--white);
+
+  &:hover {
+    background-color: var(--pink);
+  }
+}
+
+.back_button {
+  background-color: var(--light-grey);
+
+  &:hover {
+    background-color: var(--teal);
+  }
+}
+
+.project_info {
+  @media (max-width: 800px) {
+    font-size: 0.75rem;
+  }
+}
