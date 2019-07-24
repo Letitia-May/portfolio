@@ -9,12 +9,12 @@
   }
 }
 
-.styled_main_tile {
+.main_tile {
   padding: 2rem 1rem;
   background-color: var(--teal);
 }
 
-.styled_info_tile {
+.info_tile {
   padding: 2rem 1rem;
   background-color: var(--light-grey);
 }
@@ -53,7 +53,9 @@
 }
 
 .back_button {
+  border: 1px solid var(--white);
   background-color: var(--light-grey);
+  color: var(--white);
 
   &:hover {
     background-color: var(--teal);

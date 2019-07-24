@@ -23,7 +23,7 @@ class Project extends React.Component {
     let tile
 
     const MainTile = () => (
-      <div className={styles.styled_main_tile}>
+      <div className={styles.main_tile}>
         <a className={styles.info_link} onClick={this.showInfoTile}>more info</a>
         <p className={styles.heading}>{this.props.title}</p>
         <a href={this.props.url} target="_blank" rel="noopener noreferrer">
@@ -33,7 +33,7 @@ class Project extends React.Component {
     )
 
     const InfoTile = () => (
-      <div className={styles.styled_info_tile}>
+      <div className={styles.info_tile}>
         <p className={styles.project_info}>{this.props.about}</p>
         <button className={styles.back_button} onClick={this.showMainTile}>Back</button>
       </div>
