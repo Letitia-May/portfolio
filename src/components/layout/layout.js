@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
             rel="noopener noreferrer"
           >
             Gatsby
-            </a>
+          </a>
           <br />
           Source available on{` `}
           <a
@@ -39,7 +39,7 @@ const Layout = ({ children }) => (
             rel="noopener noreferrer"
           >
             Github
-            </a>
+          </a>
         </div>
       </div>
     )}
