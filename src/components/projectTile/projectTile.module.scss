@@ -1,22 +1,27 @@
-.container {
+.tile {
   width: 700px;
+  height: 300px;
   text-align: center;
   margin: 2rem 0;
   color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
 
   @media (max-width: 800px) {
     width: 80vw;
+    height: 240px;
   }
-}
 
-.main_tile {
-  padding: 2rem 1rem;
-  background-color: var(--teal);
-}
+  &_main {
+    background-color: var(--teal);
+  }
 
-.info_tile {
-  padding: 2rem 1rem;
-  background-color: var(--light-grey);
+  &_info {
+    background-color: var(--light-grey);
+  }
 }
 
 .heading {
