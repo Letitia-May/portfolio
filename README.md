@@ -4,7 +4,7 @@
 
 ## Usage
 
-### Deploying the app
+### Developing the app
 ```
 gatsby develop
 ```
