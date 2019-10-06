@@ -23,13 +23,13 @@ const ProjectTile = ({ url, title, about }) => {
           <p className={styles.heading}>{title}</p>
         </>
       ) : (
-        <>
-          <p className={styles.project_info}>{about}</p>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <button className={styles.link_button}>Visit</button>
-          </a>
-        </>
-      )}
+          <>
+            <p className={styles.project_info}>{about}</p>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <button className={styles.link_button}>Visit</button>
+            </a>
+          </>
+        )}
     </div>
   )
 }
