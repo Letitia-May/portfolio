@@ -26,7 +26,7 @@ const ProjectTile = ({ url, title, about }) => {
         <>
           <p className={styles.project_info}>{about}</p>
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <button className={styles.button}>Visit</button>
+            <button className={styles.link_button}>Visit</button>
           </a>
         </>
       )}
