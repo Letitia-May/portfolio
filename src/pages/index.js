@@ -29,7 +29,7 @@ const IndexPage = () => (
         <Icon type="twitter" url="https://twitter.com/letitia_may" />
       </div>
       <Link to="/projects/">
-        <button className="styles.project_button">Projects</button>
+        <button className={styles.project_button}>Projects</button>
       </Link>
     </div>
   </>
