@@ -6,15 +6,20 @@
 
 .page_content {
   flex: 1 0 auto;
-  margin: 0 auto;
+  align-self: center;
+  max-width: 1050px;
   padding: 1rem 1rem 0;
 }
 
 .footer {
   flex-shrink: 0;
   border-top: 1px solid var(--pink);
-  margin: 1rem;
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.footer_content {
+  max-width: 1050px;
+  margin: 0 auto;
   text-align: right;
   font-size: 0.75rem;
   line-height: 1.5;

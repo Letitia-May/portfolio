@@ -23,23 +23,25 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className={styles.page_content}>{children}</div>
         <div className={styles.footer}>
-          © {new Date().getFullYear()}, Built with{` `}
-          <a
-            href="https://www.gatsbyjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Gatsby
+          <div className={styles.footer_content}>
+            © {new Date().getFullYear()}, Built with{` `}
+            <a
+              href="https://www.gatsbyjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gatsby
           </a>
-          <br />
-          Source available on{` `}
-          <a
-            href="https://github.com/Letitia-May/portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Github
+            <br />
+            Source available on{` `}
+            <a
+              href="https://github.com/Letitia-May/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Github
           </a>
+          </div>
         </div>
       </div>
     )}
