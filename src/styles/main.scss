@@ -1,9 +1,10 @@
 :root {
-  --dark-grey: #555555;
-  --grey: #bdbdbd;
   --white: #fcfcfc;
-  --pink: #ff78ba;
-  --teal: #00c7b6;
+  --dark: #3E2B23;
+  --primary: #A0B7B0;
+  --secondary: #EBD7CA;
+  --highlight: #EF9BA3;
+
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -23,7 +24,7 @@ html, body {
 body {
   @import url('https://fonts.googleapis.com/css?family=Raleway');
   font-family: 'Raleway', sans-serif;
-  color: var(--dark-grey);
+  color: var(--dark);
   letter-spacing: 0.05rem;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white);
 }
 a {
-  color: var(--teal);
+  color: var(--highlight);
   text-decoration: none;
 }
 button {

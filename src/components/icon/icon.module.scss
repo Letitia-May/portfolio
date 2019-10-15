@@ -1,11 +1,11 @@
 .container {
   padding: 1rem 1rem 0;
-  color: var(--teal);
+  color: var(--secondary);
   font-size: 2rem;
   transition: all 0.35s ease-in-out;
 
   &:hover,
   &:active {
-    color: var(--pink);
+    color: var(--highlight);
   }
 }

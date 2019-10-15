@@ -25,7 +25,7 @@
   }
 
   &_info {
-    background-color: var(--teal);
+    background-color: var(--primary);
   }
 }
 
@@ -40,11 +40,11 @@
 
 .link_button {
   border: 1px solid var(--white);
-  background-color: var(--teal);
+  background-color: var(--primary);
   color: var(--white);
 
   &:hover {
-    background-color: var(--pink);
+    background-color: var(--highlight);
   }
 }
 
