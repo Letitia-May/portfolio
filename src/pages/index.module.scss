@@ -1,69 +1,85 @@
 .main_layout {
+  display: flex;
+  flex-direction: row;
   height: 100vh;
   width: 100%;
-  padding: 1rem 1.5rem;
-  background-color: var(--primary);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 
-.main_content {
-  text-align: center;
-  padding-bottom: 2rem;
+.dark_half, .light_half {
+  flex: 1;
+  padding: 2rem;
+}
+
+.dark_half {
+  background-color: var(--primary);
+}
+
+.light_half {
+  background-color: var(--secondary);
+}
+
+.dark_content {
+  text-align: right;
+
+  .icons {
+    margin-right: 5px;
+  }
+
+  a {
+    margin-left: 1.5rem;
+  }
+}
+
+.light_content {
+  margin-top: 10px;
+
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.75rem;
+  }
+
+  a {
+    border-bottom: 1px solid var(--dark);
+
+    &:hover {
+      color: var(--highlight);
+      border-bottom: 1px solid var(--highlight);
+    }
+  }
 }
 
 h1 {
   font-size: 3rem;
-  text-indent: 0.5rem;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: var(--secondary);
+  margin: 0;
 
-  @media (max-width: 700px) {
-    font-size: 2.5rem;
+  @media (max-width: 800px) {
+    font-size: 2rem;
   }
 }
 
 h2 {
   font-size: 1.5rem;
-  text-indent: 0.5rem;
   text-transform: uppercase;
-  margin: 1.5rem 0 2rem;
-  color: var(--secondary);
+  margin: 1rem 0 2rem;
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     font-size: 1rem;
   }
 }
 
-hr {
-  width: 100%;
-  max-width: 800px;
-  border: 0.5px solid var(--highlight);
-  background: var(--highlight);
-
-  &:after {
-    content: ' ';
-    height: 8px;
-    position: relative;
-    bottom: 4px;
-    left: calc(50% - 4px);
-    width: 8px;
-    background: var(--highlight);
-    transform: rotate(45deg);
-    display: block;
-  }
-}
-
 .project_button {
-  border: 1px solid var(--secondary);
-  background-color: var(--primary);
-  color: var(--secondary);
+  background-color: var(--secondary);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+  margin-top: 1rem;
 
   &:hover {
     background-color: var(--highlight);
-    border: 1px solid var(--secondary);
   }
 }

@@ -32,8 +32,12 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0.35rem;
   color: var(--white);
 }
+p {
+  letter-spacing: 0.1rem;
+  line-height: 1.25rem;
+}
 a {
-  color: var(--highlight);
+  color: var(--dark);
   text-decoration: none;
 }
 button {

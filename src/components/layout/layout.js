@@ -24,23 +24,26 @@ const Layout = ({ children }) => (
         <div className={styles.page_content}>{children}</div>
         <div className={styles.footer}>
           <div className={styles.footer_content}>
-            © {new Date().getFullYear()}, Built with{` `}
-            <a
-              href="https://www.gatsbyjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Gatsby
-          </a>
-            <br />
-            Source available on{` `}
-            <a
-              href="https://github.com/Letitia-May/portfolio"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Github
-          </a>
+            <p>
+              © {new Date().getFullYear()}, Built with{` `}
+              <a
+                href="https://www.gatsbyjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gatsby
+              </a>
+            </p>
+            <p>
+              Source available on{` `}
+              <a
+                href="https://github.com/Letitia-May/portfolio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </p>
           </div>
         </div>
       </div>
