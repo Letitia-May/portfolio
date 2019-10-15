@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styles from './header.module.scss'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div className={styles.header}>
     <div className={styles.header_content}>
       <div className={styles.link}>
@@ -14,8 +14,8 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          <p className={styles.main_title}>{siteTitle}</p>
-          <p className={styles.subtitle}>Web developer</p>
+          <p className={styles.main_title}>Chloe</p>
+          <p className={styles.subtitle}>Web dev</p>
         </Link>
       </div>
     </div>
