@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 import styles from './projectTile.module.scss'
 
-const ProjectTile = ({ url, title, about }) => {
+const ProjectTile = ({ url, title, about, tech }) => {
   const [showMoreInfo, setShowMoreInfo] = useState(false)
 
   const tileClass = classNames({
@@ -25,6 +25,7 @@ const ProjectTile = ({ url, title, about }) => {
       ) : (
           <>
             <p className={styles.project_info}>{about}</p>
+            <p className={styles.project_info}>{tech}</p>
             <a href={url} target="_blank" rel="noopener noreferrer">
               <button className={styles.link_button}>Visit</button>
             </a>

@@ -4,7 +4,7 @@
   justify-content: center;
   flex-direction: column;
   width: 700px;
-  height: 300px;
+  height: 250px;
   margin-bottom: 2rem;
   padding: 1rem;
   text-align: center;
@@ -12,7 +12,10 @@
 
   @media (max-width: 800px) {
     width: 80vw;
-    height: 230px;
+  }
+
+  @media (max-width: 600px) {
+    height: 300px;
   }
 
   &_main {
@@ -43,6 +46,7 @@
   border: 1px solid var(--white);
   background-color: var(--primary);
   color: var(--white);
+  margin-bottom: 1rem;
 
   &:hover {
     background-color: var(--highlight);
@@ -50,7 +54,5 @@
 }
 
 .project_info {
-  @media (max-width: 800px) {
-    font-size: 0.75rem;
-  }
+  font-size: 0.75rem;
 }

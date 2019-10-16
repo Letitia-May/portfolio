@@ -11,7 +11,8 @@ const Projects = () => (
       <ProjectTile
         url="https://capricornrecords.com.au/"
         title="Capricorn Records"
-        about="An independent e-commerce store selling used vinyls, built using Shopify's CMS."
+        about="An independent e-commerce store selling new and used vinyls, built using Shopify's CMS."
+        tech="Technologies: HTML, SCSS, Liquid, Shopify, JavaScript, jQuery."
       />
     </Layout>
   </>
