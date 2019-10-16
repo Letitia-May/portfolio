@@ -8,7 +8,7 @@
   flex: 1 0 auto;
   align-self: center;
   max-width: 1050px;
-  padding: 1rem 1rem 0;
+  padding: 1rem 2rem 0;
 }
 
 .footer {
@@ -20,7 +20,26 @@
 .footer_content {
   max-width: 1050px;
   margin: 0 auto;
-  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.icons {
+  a {
+    margin-right: 1.5rem;
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 1rem;
+  }
+}
+
+.links {
   font-size: 0.75rem;
 
   p {
@@ -28,6 +47,10 @@
   }
 
   a {
-    color: var(--primary)
+    border-bottom: 1px solid var(--dark);
+
+    &:hover {
+      border-bottom: 1px solid var(--highlight);
+    }
   }
 }

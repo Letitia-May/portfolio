@@ -39,6 +39,10 @@ p {
 a {
   color: var(--dark);
   text-decoration: none;
+
+  &:hover {
+    color: var(--highlight);
+  }
 }
 button {
   font-size: 0.5rem;
