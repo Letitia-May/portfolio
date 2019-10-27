@@ -37,7 +37,10 @@ const Layout = ({ children }) => (
             <div className={styles.footer_content}>
               <div className={styles.icons}>
                 <Icon type="github" url="https://github.com/Letitia-May" />
-                <Icon type="linkedin-in" url="https://au.linkedin.com/in/ckuypers" />
+                <Icon
+                  type="linkedin-in"
+                  url="https://au.linkedin.com/in/ckuypers"
+                />
                 <Icon type="twitter" url="https://twitter.com/letitia_may" />
               </div>
               <div className={styles.links}>
@@ -49,7 +52,7 @@ const Layout = ({ children }) => (
                     rel="noopener noreferrer"
                   >
                     Gatsby
-              </a>
+                  </a>
                 </p>
                 <p>
                   Source available on{` `}
@@ -59,7 +62,7 @@ const Layout = ({ children }) => (
                     rel="noopener noreferrer"
                   >
                     Github
-              </a>
+                  </a>
                 </p>
               </div>
             </div>
