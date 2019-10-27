@@ -10,7 +10,7 @@
     "start": "npm run develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "jest"
   },
   "dependencies": {
     "classnames": "^2.2.6",
@@ -31,8 +31,13 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "babel-preset-gatsby": "^0.2.20",
     "gh-pages": "^2.0.1",
-    "prettier": "^1.15.2"
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.15.2",
+    "react-test-renderer": "^16.11.0"
   },
   "keywords": [
     "gatsby"
