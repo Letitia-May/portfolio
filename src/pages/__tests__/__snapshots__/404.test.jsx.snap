@@ -1,0 +1,148 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFoundPage renders correctly 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="header"
+  >
+    <div
+      className="header_content"
+    >
+      <div
+        className="link"
+      >
+        <a
+          href="/"
+          style={
+            Object {
+              "color": "white",
+              "textDecoration": "none",
+            }
+          }
+        >
+          <p
+            className="main_title"
+          >
+            Chloe
+          </p>
+          <p
+            className="subtitle"
+          >
+            Web dev
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="page_content"
+  >
+    <h1>
+      NOT FOUND
+    </h1>
+    <p>
+      You just hit a route that doesn't exist.
+    </p>
+    <p>
+      Try visiting the
+       
+      <a
+        href="/"
+        style={
+          Object {
+            "color": "var(--primary)",
+          }
+        }
+      >
+        home page
+      </a>
+       
+      or checking out my
+       
+      <a
+        href="/projects/"
+        style={
+          Object {
+            "color": "var(--primary)",
+          }
+        }
+      >
+        projects
+      </a>
+      .
+    </p>
+  </div>
+  <div
+    className="footer"
+  >
+    <div
+      className="footer_content"
+    >
+      <div
+        className="icons"
+      >
+        <a
+          className="container"
+          href="https://github.com/Letitia-May"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-github"
+          />
+        </a>
+        <a
+          className="container"
+          href="https://au.linkedin.com/in/ckuypers"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-linkedin-in"
+          />
+        </a>
+        <a
+          className="container"
+          href="https://twitter.com/letitia_may"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-twitter"
+          />
+        </a>
+      </div>
+      <div
+        className="links"
+      >
+        <p>
+          © 
+          2019
+          , Built with
+           
+          <a
+            href="https://www.gatsbyjs.org"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Gatsby
+          </a>
+        </p>
+        <p>
+          Source available on
+           
+          <a
+            href="https://github.com/Letitia-May/portfolio"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
