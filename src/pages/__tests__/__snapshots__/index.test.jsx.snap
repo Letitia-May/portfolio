@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Index renders correctly 1`] = `
+<div
+  className="main_layout"
+>
+  <div
+    className="dark_half"
+  >
+    <div
+      className="dark_content"
+    >
+      <h1>
+        Chloe Kuypers
+      </h1>
+      <h2>
+        Web developer
+      </h2>
+      <span
+        className="icons"
+      >
+        <a
+          className="container"
+          href="https://github.com/Letitia-May"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-github"
+          />
+        </a>
+        <a
+          className="container"
+          href="https://au.linkedin.com/in/ckuypers"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-linkedin-in"
+          />
+        </a>
+        <a
+          className="container"
+          href="https://twitter.com/letitia_may"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <i
+            className="fab fa-twitter"
+          />
+        </a>
+      </span>
+    </div>
+  </div>
+  <div
+    className="light_half"
+  >
+    <div
+      className="light_content"
+    >
+      <p>
+        Hi there! I'm a developer based in Munich, Germany, and I enjoy building user-centric and responsive front-ends.
+      </p>
+      <p>
+        I currently work as a consultant with ThoughtWorks, and before entering the world of technology my background was in Human Resources and project management.
+      </p>
+      <p>
+        I'm passionate about growing and supporting the tech community. I've been apart of creating Female Coders Lab (both in
+         
+        <a
+          href="https://www.meetup.com/Female-Coders-Lab-Melbourne/"
+        >
+          Melbourne
+        </a>
+         
+        and
+         
+        <a
+          href="https://www.meetup.com/Female-Coders-Lab-Munchen/"
+        >
+          Munich
+        </a>
+        ), as well as the Junior Dev Social
+         
+        <a
+          href="https://www.meetup.com/Junior-Developers-Melbourne/"
+        >
+          meetup
+        </a>
+        .
+      </p>
+      <a
+        href="/projects/"
+      >
+        <button
+          className="project_button"
+        >
+          Projects
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+`;
