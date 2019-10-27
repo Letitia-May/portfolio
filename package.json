@@ -31,6 +31,8 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.0",
+    "@testing-library/react": "^9.3.0",
     "babel-jest": "^24.9.0",
     "babel-preset-gatsby": "^0.2.20",
     "gh-pages": "^2.0.1",
