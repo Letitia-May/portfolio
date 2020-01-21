@@ -37,8 +37,8 @@ const IndexPage = () => (
       <div className={styles.light_half}>
         <div className={styles.light_content}>
           <p>
-            Hi there! I'm a developer based in Munich, Germany, and I enjoy
-            building user-centric and responsive front-ends.
+            Hi there! I'm a developer based in Melbourne, Australia, and I enjoy
+            building user-centric and responsive websites.
           </p>
           <p>
             I currently work as a consultant with ThoughtWorks, and before
